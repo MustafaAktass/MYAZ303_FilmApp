@@ -1,0 +1,31 @@
+﻿@model FilmFeatures
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Filmlerim</h4>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Film Adı</th>
+                            <th>Film Yorumum</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                        <tr>
+                                <td>@Model.FilmName</td>
+                                <td>@Model.FilmComment</td>
+                        </tr> 
+                    </tbody>
+                    <tbody>
+                    </tbody>
+                </table>
+                <br />
+                <a href="/Film/Index" class="btn btn-outline-info">Filmlerim</a>
+            </div>
+        </div>
+    </div>
+</div>

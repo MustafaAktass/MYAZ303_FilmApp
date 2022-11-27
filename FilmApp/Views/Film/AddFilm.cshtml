@@ -1,0 +1,20 @@
+﻿@using (Html.BeginForm("AddFilm", "Film", FormMethod.Post))
+{
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Film Ekle</h4>
+                <br />
+                <form class="forms-sample">
+                    <div class="form-group">
+                        <label>Film Adı</label>
+                        <input type="text" class="form-control" name="FilmName">
+                        <label class="mt-5">Film Yorumu</label>
+                        <input type="text" class="form-control" name="FilmComment">
+                    </div>
+                    <button type="submit" class="btn btn-outline-info  mt-5">Kaydet</button>
+                </form>
+            </div>
+        </div>
+    </div>
+}
