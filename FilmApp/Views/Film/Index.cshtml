@@ -1,7 +1,4 @@
-﻿
-@model List<FilmFeatures>
-
-
+﻿@model List<FilmFeatures>
 <div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
@@ -22,6 +19,7 @@
                             <td>@item.FilmName</td>                         
                            <td><a href="/Film/DeleteFilm/@item.FilmId" class="btn btn-outline-danger">Sil</a></td>
                            <td><a href="/Film/FilmDetails/@item.FilmId" class="btn btn-outline-warning">Film Yorumum</a></td>
+                           <td><a href="/Film/UpdateFilm/@item.FilmId" class="btn btn-outline-info">Film Güncelle</a></td>
                           </tr>
                             }
                     </tbody>

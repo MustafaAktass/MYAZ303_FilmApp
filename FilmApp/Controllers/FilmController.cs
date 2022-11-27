@@ -28,6 +28,18 @@ namespace FilmApp.Controllers
         {
             return View();
         }
+        public IActionResult UpdateFilm(int id)
+        {
+            var film = db.Set<FilmFeatures>().Find(id);
+            return View(film);
+        }
+        [HttpPost]
+        public IActionResult UpdateFilm(FilmFeatures film)
+        {
+            db.Set<FilmFeatures>().Update(film);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
         [HttpPost]
         public IActionResult AddFilm(FilmFeatures model)
         {

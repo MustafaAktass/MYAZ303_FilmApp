@@ -1,0 +1,25 @@
+﻿@model FilmFeatures
+<form method="post" asp-action="UpdateFilm">
+    <input asp-for="FilmId" hidden />
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Film Güncelle</h4>
+                <br />
+        
+         <form class="forms-sample">
+                <div class="form-group">
+                    <label>Film Adı</label>
+                    
+                    <input asp-for="FilmName" class="form-control" />
+                    <label class="mt-5">Film Yorumu</label>
+                   
+                    <input asp-for="FilmComment" class="form-control" />
+                </div>
+                <button type="submit"  class="btn btn-outline-info mt-5">Güncelle</button>
+            </form>
+            </div>
+    
+    </div>
+    </div>
+</form>
